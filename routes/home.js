@@ -5,7 +5,7 @@ const router = express.Router();
 const artists = [];
 
 router.get("/", (req, res, next) => {
-    res.render("home");
+    res.render("home",{pageTitle: "Add Artists"});
 });
 
 router.post("/", (req, res, next) => {
